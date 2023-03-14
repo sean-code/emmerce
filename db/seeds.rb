@@ -9,12 +9,8 @@
 
 puts "Seeding has begun...🌱 "
 
-10.times
-    
-
-
-
+20.times do
+    Todo.create(title: Faker::Book.title, description: Faker::Lorem.paragraph(sentence_count: 3))
 end
 
-
-puts "Seeding was succesful🌱 "
+puts "Seeding was successful🌱 "
