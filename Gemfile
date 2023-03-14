@@ -48,3 +48,6 @@ end
 
 
 gem "faker"
+
+
+gem 'devise_token_auth'
