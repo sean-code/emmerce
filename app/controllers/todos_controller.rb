@@ -6,12 +6,12 @@ class TodosController < ApplicationController
     # GET /todos
     def index
         @todos = Todo.all
-        render json: @todos
+        render json: @todos, status: :ok
     end
 
     # GET /todos/1
     def show
-        render json: @todo
+        render json: @todo, status: :ok
     end
 
     # POST /todos
@@ -37,6 +37,7 @@ class TodosController < ApplicationController
     # DELETE /todos/1
     def destroy
       @todo.destroy
+      head :no_content
     end
   
     private
