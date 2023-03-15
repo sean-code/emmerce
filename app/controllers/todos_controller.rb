@@ -11,7 +11,7 @@ class TodosController < ApplicationController
 
     # GET /todos/1
     def show
-        render json: @todo, except: [:created_at, :updated_at], status: :ok
+        render json: @todo,  except: [:created_at, :updated_at], status: :ok
     end
 
     # POST /todos
