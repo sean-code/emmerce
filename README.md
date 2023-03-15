@@ -1,6 +1,6 @@
 # README
 
-* Developed by - [John Nganga](https://github.com/sean-code)
+* Developed by [John Nganga](https://github.com/sean-code)
 
 ## Description
 A simple REST API that allows users to create, retrieve, update, and delete items from a
@@ -31,17 +31,20 @@ todo list.
 - On a separate terminal open an IRB session\
 `rails c`
 
-- Then to simulate authentication, create a new user by instantiating a new User. For example:\
+- Then to simulate authentication, create a new user by instantiating a new User. For example:
 
-```user2=User.create(username:"kate", password_digest:"1234")```\
+```user2=User.create(username:"kate", password_digest:"1234")```
+* Response:
+![User](./assets/imgs/User.png)
+
 * Note: Because we have BCrypt gem, the above password created gets salted and is therefore stored in a encrypted format
 
 
 
-### All Todos In The DB
-![AllNotes](./assets/imgs/todos.png)
+### All Todos
+![AllTodos](./assets/imgs/todos.png)
 
-### Notes By ID
+### Todos By ID
 ![OneNote](./assets/imgs/todosid.png)
 
 
@@ -50,13 +53,9 @@ todo list.
 
 * CRUD Actions (Supports all the Create, Read, Update, and Delete actions)
 
-
 > POST
 
 `/todos/create/`
-- Response:
-
-```json
 
 - Create a new todo
 
@@ -96,19 +95,16 @@ todo list.
   "id": 1,
   "title": "Climb Highway",
   "description": "Labore fugit voluptatem. Quo est ea. Consequatur tenetur odit."
-}```
+}
 
 -Response:
- {
+{
   "id": 1,
   "title": "Climb Staircase",
   "description": "Laborious ait voluptatem."
 }
 
-- Updated
-````
-
-
+```
 > DELETE
 
 
@@ -128,7 +124,13 @@ todo list.
 
 &nbsp;<br>
 &nbsp;<br>
-# License
+
+## Known Bugs
+
+So far so good there are no bugs related to this project 😎
+&nbsp;<br>
+&nbsp;<br>
+## License
 
 Copyright (c) 2023 John Nganga
 
