@@ -50,4 +50,6 @@ end
 gem "faker"
 
 
-gem 'devise_token_auth'
+# gem 'devise_token_auth'
+
+gem "active_model_serializers"
