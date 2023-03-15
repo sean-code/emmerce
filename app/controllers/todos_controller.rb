@@ -6,12 +6,12 @@ class TodosController < ApplicationController
     # GET /todos
     def index
         @todos = Todo.all
-        render json: @todos, status: :ok
+        render json: @todos, except: [:created_at, :updated_at], status: :ok
     end
 
     # GET /todos/1
     def show
-        render json: @todo, status: :ok
+        render json: @todo, except: [:created_at, :updated_at], status: :ok
     end
 
     # POST /todos
