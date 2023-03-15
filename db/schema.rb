@@ -17,10 +17,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_15_113226) do
   create_table "todos", force: :cascade do |t|
     t.text "title"
     t.text "description"
-    t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_todos_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -30,5 +28,4 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_15_113226) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "todos", "users"
 end
