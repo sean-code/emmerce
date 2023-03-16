@@ -70,7 +70,7 @@ todo list.
 
 ```json
 {
-  "success": "User created successfully"
+  "success": "Todo created successfully"
 }
 ```
 
